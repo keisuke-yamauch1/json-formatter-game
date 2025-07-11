@@ -1,12 +1,10 @@
 /**
- * この関数を実装してください！
  * @param {string} input - 整形されていないJSON文字列
  * @returns {string} 整形されたJSON文字列 (インデントはスペース2つ)
  */
 function formatJson(input) {
-    // 文字列をJavaScriptのオブジェクトに変換
+    // この実装を削除して書き換えてください
     const parsedObject = JSON.parse(input);
-    // オブジェクトをインデント付きのJSON文字列に変換して返す
     return JSON.stringify(parsedObject, null, 2);
 }
 
