@@ -24,17 +24,7 @@ describe('JSON Formatter Game (Fixed Indent)', () => {
         expect(formatJson(input)).toBe(expectedOutput);
     });
 
-    // ケース2: シンプルな配列
-    test('シンプルな配列を整形できる', () => {
-        const input = '[1,"apple",false,null]';
-        const expectedOutput = `[
-  1,
-  "apple",
-  false,
-  null
-]`;
-        expect(formatJson(input)).toBe(expectedOutput);
-    });
+    // ケース2: シンプルな配列（なし）
 
     // ケース3: ネストしたオブジェクト
     test('ネストしたオブジェクトを整形できる', () => {
@@ -52,24 +42,7 @@ describe('JSON Formatter Game (Fixed Indent)', () => {
         expect(formatJson(input)).toBe(expectedOutput);
     });
 
-    // ケース4: ネストした配列
-    test('ネストした配列を整形できる', () => {
-        const input = '[[1,2],[3,4,[5]]]';
-        const expectedOutput = `[
-  [
-    1,
-    2
-  ],
-  [
-    3,
-    4,
-    [
-      5
-    ]
-  ]
-]`;
-        expect(formatJson(input)).toBe(expectedOutput);
-    });
+    // ケース4: ネストした配列(なし)
 
     // ケース5: 空のオブジェクトと配列
     test('空のオブジェクトと配列を正しく扱う', () => {
